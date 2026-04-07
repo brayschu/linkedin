@@ -1074,8 +1074,8 @@ gap: 40px;
 }
 
 .headshot {
-width: 180px;
-height: 180px;
+width: 180px !important;
+height: 180px !important;
 object-fit: cover;
 border-radius: 50%;
 }
