@@ -3,409 +3,495 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brayden Schuler | Accounting & Internal Audit</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ============================================================
+       METADATA — Edit the title, description, and theme color here
+       ============================================================ -->
+  <title>Brayden Schuler — Accounting & Internal Audit</title>
+  <meta name="description" content="Brayden Schuler is a third-year accounting student at Penn State's Smeal College of Business and an incoming internal audit intern at Barclays." />
+  <meta name="author" content="Brayden Schuler" />
+
+  <!-- Open Graph (controls how the link appears when shared) -->
+  <meta property="og:title" content="Brayden Schuler — Accounting & Internal Audit" />
+  <meta property="og:description" content="Third-year accounting student at Penn State. Incoming Internal Audit Intern, Barclays." />
+  <meta property="og:type" content="website" />
+
+  <!-- Browser tab color on mobile -->
+  <meta name="theme-color" content="#1c2e45" />
+
+  <!-- Favicon — initials in navy -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231c2e45'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='13' font-weight='bold' fill='white'>BS</text></svg>" />
+
+  <!-- Fonts: Playfair Display (headings) + Inter (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">BS</a>
-      <ul class="nav-links">
+  <!-- Skip link for keyboard/screen reader users -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header id="site-header">
+    <nav class="nav-inner" aria-label="Primary navigation">
+
+      <!-- Your name in the nav — edit here -->
+      <a href="#home" class="nav-name">Brayden Schuler</a>
+
+      <ul class="nav-links" role="list">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
       </button>
-    </div>
-    <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    </nav>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow">Hello, I'm</p>
-      <h1>Brayden Schuler</h1>
-      <p class="hero-title">Accounting Student &amp; Incoming Internal Audit Intern</p>
-      <p class="hero-sub">
-        Smeal College of Business · Penn State University · CIA Candidate
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get in Touch</a>
-        <a href="#experience" class="btn-secondary">View My Work</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">3.91</span>
-          <span class="stat-label">GPA</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">5+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">Dean's</span>
-          <span class="stat-label">List Every Semester</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    <!-- Mobile navigation drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="section-label">01 — About</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>Driven by integrity,<br />guided by numbers.</h2>
-          <p>
-            I'm Brayden Schuler, an accounting student at The Pennsylvania State
-            University's Smeal College of Business, pursuing a Bachelor of Science
-            in Accounting. I aspire to become a Certified Internal Auditor and am
-            passionate about risk management, controls, and financial transparency.
-          </p>
-          <p>
-            I have maintained strong academic performance with a 3.91 GPA and
-            earned Dean's List recognition every semester from Fall 2023 through
-            Fall 2025. This summer, I will be joining Barclays as an Internal Audit
-            Intern, where I look forward to gaining hands-on experience in risk
-            assessment and internal controls.
-          </p>
-          <div class="about-badges">
-            <span class="badge">CIA Candidate</span>
-            <span class="badge">Dean's List</span>
-            <span class="badge">Smeal College of Business</span>
-          </div>
-        </div>
-        <div class="about-card">
-          <div class="about-card-item">
-            <div class="about-card-icon">🎓</div>
-            <div>
-              <div class="about-card-label">University</div>
-              <div class="about-card-value">Penn State University</div>
-            </div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-icon">📚</div>
-            <div>
-              <div class="about-card-label">Major</div>
-              <div class="about-card-value">BS Accounting</div>
-            </div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-icon">⭐</div>
-            <div>
-              <div class="about-card-label">GPA</div>
-              <div class="about-card-value">3.91 / 4.00</div>
-            </div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-icon">📍</div>
-            <div>
-              <div class="about-card-label">Location</div>
-              <div class="about-card-value">Wilmington, DE</div>
-            </div>
-          </div>
-          <div class="about-card-item">
-            <div class="about-card-icon">🎯</div>
-            <div>
-              <div class="about-card-label">Goal</div>
-              <div class="about-card-value">Certified Internal Auditor</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-label">02 — Skills</div>
-      <h2>Tools &amp; Technologies</h2>
-      <p class="section-sub">
-        A toolkit built for data analysis, reporting, and creative problem-solving.
-      </p>
-      <div class="skills-grid">
+  <main id="main">
 
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#1D6F42"/>
-              <path d="M7 8h18v16H7V8z" fill="none"/>
-              <path d="M9 10l4 6-4 6h2.5l2.5-4 2.5 4H19l-4-6 4-6h-2.5L14 16l-2.5-4H9z" fill="white"/>
-              <rect x="19" y="10" width="1.5" height="12" fill="white"/>
-              <rect x="21" y="10" width="3.5" height="2" fill="white"/>
-              <rect x="21" y="15" width="3.5" height="2" fill="white"/>
-              <rect x="21" y="20" width="3.5" height="2" fill="white"/>
-            </svg>
-          </div>
-          <h3>Microsoft Excel</h3>
-          <p>Advanced spreadsheets, data analysis, pivot tables, financial modeling, and reporting automation.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 90%"></div>
-          </div>
-          <span class="skill-pct">Advanced</span>
-        </div>
+    <!-- ============================================================
+         HERO
+         Edit: name, headline, intro paragraph, and CTA link below
+         ============================================================ -->
+    <section id="home" class="hero">
+      <div class="container">
 
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#D83B01"/>
-              <path d="M8 8h16v16H8V8z" fill="none"/>
-              <rect x="10" y="10" width="12" height="2" rx="1" fill="white"/>
-              <rect x="10" y="14" width="8" height="2" rx="1" fill="white"/>
-              <rect x="10" y="18" width="10" height="2" rx="1" fill="white"/>
-              <rect x="10" y="22" width="6" height="2" rx="1" fill="white"/>
-            </svg>
-          </div>
-          <h3>Microsoft Word</h3>
-          <p>Professional document creation, report writing, formatting, and business communications.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 90%"></div>
-          </div>
-          <span class="skill-pct">Advanced</span>
-        </div>
+        <!-- Small eyebrow label above name -->
+        <p class="hero-eyebrow">Accounting &middot; Internal Audit &middot; Penn State</p>
 
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#B7472A"/>
-              <rect x="9" y="9" width="14" height="14" rx="2" fill="none" stroke="white" stroke-width="1.5"/>
-              <rect x="12" y="13" width="8" height="1.5" rx="0.75" fill="white"/>
-              <rect x="12" y="16" width="8" height="1.5" rx="0.75" fill="white"/>
-              <rect x="12" y="19" width="5" height="1.5" rx="0.75" fill="white"/>
-            </svg>
-          </div>
-          <h3>Microsoft PowerPoint</h3>
-          <p>Compelling presentations, data visualization, executive summaries, and stakeholder reporting.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 85%"></div>
-          </div>
-          <span class="skill-pct">Proficient</span>
-        </div>
+        <!-- Your name — Playfair Display, large -->
+        <h1 class="hero-name">Brayden<br>Schuler</h1>
 
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#001e36"/>
-              <circle cx="16" cy="16" r="7" fill="none" stroke="#31a8ff" stroke-width="2"/>
-              <circle cx="16" cy="16" r="3" fill="#31a8ff"/>
-            </svg>
-          </div>
-          <h3>Adobe Photoshop</h3>
-          <p>Image editing, graphic design, visual content creation, and digital asset management.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 75%"></div>
-          </div>
-          <span class="skill-pct">Proficient</span>
-        </div>
+        <hr class="hero-rule" />
 
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#00005b"/>
-              <polygon points="10,9 22,16 10,23" fill="#9999ff"/>
-              <rect x="10" y="22" width="12" height="2" rx="1" fill="#e0e0ff"/>
-            </svg>
-          </div>
-          <h3>Adobe Premiere Pro</h3>
-          <p>Video editing, post-production, storytelling, and multimedia content creation.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 75%"></div>
-          </div>
-          <span class="skill-pct">Proficient</span>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="32" height="32" rx="6" fill="#0f4c81"/>
-              <text x="16" y="21" text-anchor="middle" fill="white" font-size="13" font-weight="700" font-family="serif">CIA</text>
-            </svg>
-          </div>
-          <h3>Internal Audit</h3>
-          <p>Risk assessment, internal controls, compliance frameworks, and audit methodology fundamentals.</p>
-          <div class="skill-level">
-            <div class="skill-bar" style="--w: 70%"></div>
-          </div>
-          <span class="skill-pct">Developing</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-label">03 — Experience</div>
-      <h2>Work Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item featured">
-          <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Internal Audit Intern</h3>
-                <p class="timeline-company">Barclays Bank</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Summer 2026</span>
-                <span class="timeline-badge upcoming">Upcoming</span>
-              </div>
-            </div>
-            <p class="timeline-location">📍 Wilmington, DE</p>
-            <p class="timeline-desc">
-              Incoming Internal Audit Intern at Barclays, one of the world's
-              leading international banks. Will gain hands-on experience in
-              risk assessment, internal controls evaluation, and audit
-              methodologies within a global financial institution.
+        <div class="hero-lower">
+          <div class="hero-headline-wrap">
+            <!-- Edit this line to update your headline -->
+            <p class="hero-headline">
+              Third-year accounting student at Penn State's<br class="desktop-break">
+              Smeal College of Business.<br>
+              Incoming Internal Audit Intern &mdash; Barclays, Wilmington DE.
             </p>
-            <div class="timeline-tags">
-              <span class="tag">Risk Management</span>
-              <span class="tag">Internal Controls</span>
-              <span class="tag">Financial Services</span>
-              <span class="tag">Audit Methodology</span>
-            </div>
+          </div>
+
+          <div class="hero-actions">
+            <!-- REPLACE href="#" with the path to your resume PDF, e.g. href="resume.pdf" -->
+            <a href="#" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+
+            <!-- LinkedIn URL — already set -->
+            <a href="https://www.linkedin.com/in/brayden-schuler-6553a42b2/" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="LinkedIn profile">
+              LinkedIn <span class="btn-arrow" aria-hidden="true">&nearr;</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost">Contact</a>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>General Maintenance Worker</h3>
-                <p class="timeline-company">Pennridge School District</p>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Jun 2019 – Aug 2025</span>
-              </div>
-            </div>
-            <p class="timeline-location">📍 Perkasie, PA</p>
-            <p class="timeline-desc">
-              Provided general maintenance and facility upkeep services for
-              the Pennridge School District over six years. Demonstrated
-              reliability, attention to detail, and a strong work ethic
-              while managing multiple tasks and responsibilities across
-              district facilities.
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT
+         Edit the three paragraphs and the facts panel below
+         ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">01</span>
+          <span class="section-label">About</span>
+        </div>
+
+        <div class="about-layout">
+
+          <div class="about-prose">
+            <h2>Background</h2>
+
+            <!-- Edit these paragraphs to customize your story -->
+            <p>
+              Accounting has a particular kind of rigor I find genuinely interesting — the discipline
+              of working through information carefully, understanding why controls exist, and seeing
+              how financial processes connect to organizational decisions. That interest is what drew
+              me toward internal audit.
             </p>
-            <div class="timeline-tags">
-              <span class="tag">Operations</span>
-              <span class="tag">Problem Solving</span>
-              <span class="tag">Teamwork</span>
-              <span class="tag">Detail-Oriented</span>
+            <p>
+              I'm currently a third-year student at Penn State's Smeal College of Business, pursuing
+              a Bachelor of Science in Accounting with plans to graduate in May 2027. I've maintained
+              a 3.91 GPA and been recognized on the Dean's List every semester since Fall 2023. This
+              summer, I'll be joining Barclays' internal audit function as an intern — an opportunity
+              I'm approaching as a serious first step toward a long-term career in audit and risk.
+              After graduation, I plan to pursue the Certified Internal Auditor designation.
+            </p>
+            <p>
+              Outside of academics, I've worked for the Pennridge School District every summer since
+              2019 — starting as a custodian and later moving into a general maintenance helper role.
+              Six years of consistent, hands-on work shaped how I approach responsibility: show up,
+              do it well, and take ownership.
+            </p>
+          </div>
+
+          <!-- Quick-reference facts panel — edit values below -->
+          <aside class="about-facts" aria-label="Quick facts">
+            <dl>
+              <div class="fact">
+                <dt>University</dt>
+                <dd>Penn State University</dd>
+                <dd class="fact-sub">Smeal College of Business</dd>
+              </div>
+              <div class="fact">
+                <dt>Degree</dt>
+                <dd>B.S. Accounting</dd>
+              </div>
+              <div class="fact">
+                <dt>Graduation</dt>
+                <dd>May 2027</dd>
+              </div>
+              <div class="fact">
+                <dt>GPA</dt>
+                <dd>3.91 &nbsp;/&nbsp; 4.00</dd>
+              </div>
+              <div class="fact">
+                <dt>Academic Honors</dt>
+                <dd>Dean's List &mdash; Fall 2023 through Fall 2025</dd>
+              </div>
+              <div class="fact">
+                <dt>Career Goal</dt>
+                <dd>Certified Internal Auditor (CIA)</dd>
+              </div>
+            </dl>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE
+         Add, remove, or edit roles below. Each <article> is one role.
+         ============================================================ -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">02</span>
+          <span class="section-label">Experience</span>
+        </div>
+
+        <h2>Work Experience</h2>
+
+        <div class="experience-list">
+
+          <!-- Role 1: Barclays — Upcoming internship -->
+          <article class="role">
+            <div class="role-header">
+              <div class="role-left">
+                <h3 class="role-title">Internal Audit Intern</h3>
+                <p class="role-company">Barclays</p>
+              </div>
+              <div class="role-right">
+                <time class="role-date">Summer 2026</time>
+                <span class="role-location">Wilmington, DE</span>
+                <span class="role-badge">Upcoming</span>
+              </div>
+            </div>
+            <div class="role-body">
+              <p>
+                This summer, I will join Barclays' internal audit function as an intern at their
+                Wilmington, Delaware offices. Working alongside experienced audit professionals,
+                I will gain direct exposure to audit planning, risk assessment, and the evaluation
+                of internal controls within a large, regulated financial institution.
+              </p>
+              <p>
+                Barclays is one of the world's leading international banks, operating across
+                investment banking, corporate banking, and consumer finance. The role will provide
+                meaningful early-career experience in the financial services audit environment
+                I intend to build a career in.
+              </p>
+            </div>
+          </article>
+
+          <!-- Role 2: Pennridge School District -->
+          <article class="role">
+            <div class="role-header">
+              <div class="role-left">
+                <h3 class="role-title">General Maintenance Helper</h3>
+                <p class="role-company">Pennridge School District</p>
+              </div>
+              <div class="role-right">
+                <time class="role-date">2019 &ndash; 2025</time>
+                <span class="role-location">Perkasie, PA</span>
+              </div>
+            </div>
+            <div class="role-body">
+              <p>
+                Over six consecutive summers, I worked for the Pennridge School District in a
+                facilities and maintenance capacity, starting in a custodial role before taking on
+                broader responsibilities as a general maintenance helper. Day-to-day work included
+                facilities upkeep, equipment maintenance, and coordinating tasks across school
+                district buildings during summer operations.
+              </p>
+              <p>
+                The work demanded physical reliability, attention to safety protocols, and the
+                ability to handle varied tasks independently and with minimal supervision. Six years
+                of consistent employment with the same organization reflects the kind of work ethic
+                and dependability I bring to every commitment.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EDUCATION
+         Edit degree, institution, dates, and honors below
+         ============================================================ -->
+    <section id="education" class="section">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">03</span>
+          <span class="section-label">Education</span>
+        </div>
+
+        <h2>Education</h2>
+
+        <article class="edu-entry">
+          <div class="edu-header">
+            <div class="edu-left">
+              <h3 class="edu-degree">Bachelor of Science in Accounting</h3>
+              <p class="edu-institution">Pennsylvania State University</p>
+              <p class="edu-school">Smeal College of Business</p>
+            </div>
+            <div class="edu-right">
+              <time class="edu-date">Expected May 2027</time>
             </div>
           </div>
+
+          <div class="edu-body">
+            <div class="edu-stats">
+              <div class="edu-stat">
+                <span class="edu-stat-num">3.91</span>
+                <span class="edu-stat-label">GPA</span>
+              </div>
+              <div class="edu-stat-divider" aria-hidden="true"></div>
+              <div class="edu-stat">
+                <span class="edu-stat-num">5</span>
+                <span class="edu-stat-label">Dean's List Semesters</span>
+              </div>
+            </div>
+
+            <p class="edu-honors">
+              Dean's List recognition every semester from Fall 2023 through Fall 2025.
+              Pursuing coursework in financial accounting, auditing, managerial accounting,
+              taxation, and business law, with a long-term focus on internal audit and risk.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SKILLS
+         Edit the three categories and their list items below
+         ============================================================ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">04</span>
+          <span class="section-label">Skills</span>
+        </div>
+
+        <h2>Skills &amp; Expertise</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Accounting &amp; Audit</h3>
+            <ul role="list">
+              <li>Internal Audit Fundamentals</li>
+              <li>Financial Reporting</li>
+              <li>Risk &amp; Controls</li>
+              <li>GAAP Principles</li>
+              <li>Managerial Accounting</li>
+              <li>Compliance Awareness</li>
+              <li>Business Law</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Technical Proficiency</h3>
+            <ul role="list">
+              <li>Microsoft Excel</li>
+              <li>Microsoft Word</li>
+              <li>Microsoft PowerPoint</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Microsoft Office Suite</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Professional Strengths</h3>
+            <ul role="list">
+              <li>Attention to Detail</li>
+              <li>Analytical Thinking</li>
+              <li>Written Communication</li>
+              <li>Reliability &amp; Consistency</li>
+              <li>Adaptability</li>
+              <li>Teamwork</li>
+              <li>Independent Work Ethic</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CAREER GOALS
+         Edit the goals paragraph and interest list below
+         ============================================================ -->
+    <section id="goals" class="section">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">05</span>
+          <span class="section-label">Career Goals</span>
+        </div>
+
+        <div class="goals-layout">
+          <div class="goals-prose">
+            <h2>Looking Ahead</h2>
+            <p>
+              After graduating in May 2027, I intend to pursue the Certified Internal Auditor
+              designation — a credential that reflects a serious, long-term commitment to the
+              profession. The CIA requires demonstrating competency in internal audit standards,
+              risk management, and governance, and earning it is a clear priority for me early
+              in my career.
+            </p>
+            <p>
+              My long-term professional interests are centered on internal audit, risk assessment,
+              internal controls, and financial compliance — particularly within financial services
+              and regulated industries. I'm drawn to the discipline of the field: the structured
+              thinking, the accountability, and the direct connection to organizational integrity.
+            </p>
+          </div>
+
+          <!-- Edit or add interest items here -->
+          <aside class="goals-interests" aria-label="Professional interests">
+            <h3>Areas of Interest</h3>
+            <ul role="list">
+              <li>Internal Audit</li>
+              <li>Risk Assessment</li>
+              <li>Internal Controls</li>
+              <li>Financial Compliance</li>
+              <li>Governance &amp; Accountability</li>
+              <li>Financial Services</li>
+              <li>Regulatory Environments</li>
+            </ul>
+          </aside>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education -->
-  <section id="education">
-    <div class="container">
-      <div class="section-label">04 — Education</div>
-      <h2>Education</h2>
-      <div class="edu-card">
-        <div class="edu-logo">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="60" rx="12" fill="#1E407C"/>
-            <path d="M30 12L50 22V26L30 36L10 26V22L30 12Z" fill="#009CDE"/>
-            <path d="M18 28V40L30 46L42 40V28" fill="none" stroke="white" stroke-width="2"/>
-            <circle cx="30" cy="22" r="3" fill="white"/>
-          </svg>
+
+    <!-- ============================================================
+         CONTACT
+         Edit email, LinkedIn URL, and resume link below
+         ============================================================ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+
+        <div class="section-label-row">
+          <span class="section-num" aria-hidden="true">06</span>
+          <span class="section-label">Contact</span>
         </div>
-        <div class="edu-content">
-          <h3>Bachelor of Science in Accounting</h3>
-          <p class="edu-school">Pennsylvania State University — Smeal College of Business</p>
-          <p class="edu-date">Expected Graduation: May 2027</p>
-          <div class="edu-highlights">
-            <div class="edu-highlight">
-              <span class="highlight-num">3.91</span>
-              <span class="highlight-label">GPA</span>
-            </div>
-            <div class="edu-highlight">
-              <span class="highlight-num">5×</span>
-              <span class="highlight-label">Dean's List</span>
-            </div>
-            <div class="edu-highlight">
-              <span class="highlight-num">CIA</span>
-              <span class="highlight-label">Candidate Path</span>
-            </div>
-          </div>
-          <div class="edu-detail">
-            <strong>Dean's List:</strong> Fall 2023, Spring 2024, Fall 2024, Spring 2025, Fall 2025
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-label">05 — Contact</div>
-      <h2>Let's Connect</h2>
-      <p class="section-sub">
-        I'm open to opportunities, internships, and conversations about
-        accounting, internal audit, and finance.
-      </p>
-      <div class="contact-grid">
-        <a href="mailto:braydencschuler@gmail.com" class="contact-card">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">braydencschuler@gmail.com</div>
-        </a>
-        <a href="https://www.linkedin.com/in/brayden-schuler-6553a42b2/" target="_blank" rel="noopener" class="contact-card">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          </div>
-          <div class="contact-label">LinkedIn</div>
-          <div class="contact-value">brayden-schuler</div>
-        </a>
-      </div>
-    </div>
-  </section>
+        <h2>Get in Touch</h2>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Brayden Schuler · Built with care</p>
+        <p class="contact-intro">
+          I'm open to conversations about opportunities, networking, or anything
+          related to accounting and internal audit. The best ways to reach me are below.
+        </p>
+
+        <address class="contact-list">
+
+          <!-- Email — EDIT your address here -->
+          <div class="contact-item">
+            <span class="contact-item-label">Email</span>
+            <a href="mailto:braydencschuler@gmail.com" class="contact-item-value">
+              braydencschuler@gmail.com
+            </a>
+          </div>
+
+          <!-- LinkedIn — already set -->
+          <div class="contact-item">
+            <span class="contact-item-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/brayden-schuler-6553a42b2/" target="_blank" rel="noopener" class="contact-item-value">
+              linkedin.com/in/brayden-schuler-6553a42b2
+            </a>
+          </div>
+
+          <!-- Resume — REPLACE href="#" with the path to your PDF, e.g. href="resume.pdf" -->
+          <div class="contact-item">
+            <span class="contact-item-label">Resume</span>
+            <a href="#" target="_blank" rel="noopener" class="contact-item-value">
+              Download PDF &nearr;
+            </a>
+          </div>
+
+        </address>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER — Edit year and name if needed
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Brayden Schuler</p>
+      <p class="footer-copy">&copy; 2026 &nbsp;&middot;&nbsp; Accounting &amp; Internal Audit</p>
     </div>
   </footer>
+
 
   <script src="script.js"></script>
 </body>
