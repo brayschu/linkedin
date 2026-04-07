@@ -1067,3 +1067,13 @@ p + p {
   }
 
 }
+.hero-main {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.headshot {
+width: 180px;
+border-radius: 50%;
+}
